@@ -179,9 +179,10 @@ inline void solve() {
   int n, a, b;
   read(n, a, b);
 
-  
+  n-=a;
+  if (b > 0 && b < n)
+    n=b+1;
 
-
-
+  cout << n; 
 }
 
